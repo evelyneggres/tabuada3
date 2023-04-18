@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura While</title>
+</head>
+<body>
+
+    <h1>Contador usando o <kbd> While </kbd> </h1>
+    <p>Clique no botão abaixo para iniciar o contador:</p>
+
+    <button onclick="contar()">Iniciar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+
+        function contar () {
+            var contador = 1
+            var resultado = ""
+
+            while(contador <= 100){
+                resultado += contador + " "
+                contador ++
+
+                document.getElementById ('resultado').innerHTML = resultado
+            }
+
+        }
+
+
+
+
+    </script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
